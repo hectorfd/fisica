@@ -800,7 +800,11 @@ section .org img {
     height: 500px;
 }
 
-@media screen and (max-width:1150px) {
+#navv {
+    visibility: hidden;
+}
+
+@media screen and (max-width:1160px) {
     aside {
         background: #2177cc;
         color: white;
@@ -826,6 +830,10 @@ section .org img {
         text-align: center;
         text-decoration: none;
     }
+    #nav {
+        position: relative;
+        text-align: center;
+    }
     .li {
         padding: 0px 0px;
         display: inline-block;
@@ -847,7 +855,7 @@ section .org img {
         float: left;
     }
     .pad_100 {
-        padding: 100px;
+        padding: 0px;
     }
     .org {
         width: 100%;
@@ -865,7 +873,13 @@ section .org img {
         display: inline;
         margin: 20px;
     }
-    .menu_bar .bt-menu {
-        display: block;
+    #nav {
+        position: relative;
+    }
+    #navv {
+        visibility: visible;
+    }
+    .logo {
+        width: 250px;
     }
 }

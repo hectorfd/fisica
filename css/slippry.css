@@ -338,8 +338,8 @@
     text-decoration: underline;
 }
 
-@media only screen and (max-device-width: 1000px),
-screen and (max-width: 1000px) {
+@media only screen and (max-device-width: 700px),
+screen and (max-width: 700px) {
     .sy-caption-wrap {
         left: 0;
         bottom: 0.4em;
