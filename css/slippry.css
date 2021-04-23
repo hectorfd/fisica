@@ -338,8 +338,8 @@
     text-decoration: underline;
 }
 
-@media only screen and (max-device-width: 600px),
-screen and (max-width: 600px) {
+@media only screen and (max-device-width: 1000px),
+screen and (max-width: 1000px) {
     .sy-caption-wrap {
         left: 0;
         bottom: 0.4em;
@@ -349,6 +349,9 @@ screen and (max-width: 600px) {
         padding: 0.2em 0.4em;
         font-size: 0.92em;
         border-radius: 0;
+    }
+    .sy-slides-wrap {
+        visibility: hidden;
     }
 }
 
