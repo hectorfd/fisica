@@ -351,7 +351,8 @@ screen and (max-width: 700px) {
         border-radius: 0;
     }
     .sy-slides-wrap {
-        visibility: hidden;
+        /*visibility: hidden;
+        display: block;*/
     }
 }
 
