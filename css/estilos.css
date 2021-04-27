@@ -31,9 +31,9 @@
 }
 
 .main {
-    background: #fff;
+    background: #f5f5f5;
     padding: 20px;
-    width: 70%;
+    width: 100%;
     float: left;
 }
 
@@ -147,17 +147,19 @@ nav {
     width: 100%;
     background-color: rgba(223, 223, 223, 0);
     color: black;
-    padding: 0px 0px;
+    padding: 10px 0px;
     position: fixed;
     float: none;
     z-index: 9999;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
     padding: 0px 0px;
     animation-name: ejemplo2;
     animation-duration: 0.5s;
     animation-delay: 0s;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
 }
 
 nav:hover {
@@ -171,9 +173,11 @@ nav:hover {
     animation-duration: 0.5s;
     animation-delay: 0s;
     padding: 10px 0px;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.25s 1ease-in-out;
+    -webkit-transition: all 0.25s 1ease-in-out;
+    -o-transition: all 0.25s 1ease-in-out;
+    -moz-transition: all 0.25s 1ease-in-out;
+    -ms-transition: all 0.25s 1ease-in-out;
 }
 
 @keyframes ejemplo {
@@ -200,7 +204,7 @@ nav:hover {
 /*Estilos del Logo*/
 
 .logo {
-    width: 70px;
+    width: 270px;
     padding: 0px;
     margin: 0px;
     margin-bottom: 0px;
@@ -212,10 +216,14 @@ nav:hover {
 .logo:hover {
     opacity: 1;
     transform: translate(10px);
-    /*transform: rotate(10deg);*/
-    transform: scale(1.2);
-    animation-duration: 2s;
+    transform: rotate(10deg);
+    transform: scale(1.1);
+    animation-duration: 0.2s;
     animation-delay: 0s;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 #ulnav {
@@ -246,7 +254,7 @@ nav a:hover {
     color: white;
     position: relative;
     text-decoration: none;
-    s text-transform: uppercase;
+    text-transform: uppercase;
     -webkit-border-radius: 10px 0px 10px 0px;
     -moz-border-radius: 10px 0px 10px 0px;
     -ms-border-radius: 10px 0px 10px 0px;
@@ -572,6 +580,81 @@ small
 }
 
 
+/* ----------- -------- TRABAJOS --------- ---------*/
+
+.main .trabajos {
+    width: 100%;
+    background: whitesmoke;
+    padding: 60px 0;
+}
+
+.main .trabajos .contenedor {
+    overflow: hidden;
+}
+
+.main .trabajos .titulo {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: rgb(181, 26, 6);
+    text-align: center;
+}
+
+.main .trabajos .contenedor-trabajos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo {
+    width: 23%;
+    margin-bottom: 40px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .thumb {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .thumb img {
+    width: 100%;
+    vertical-align: top;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion {
+    text-align: center;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .nombre {
+    font-weight: 700;
+    color: rgb(181, 26, 6);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria {
+    font-size: 18px;
+    color: rgb(148, 148, 148);
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria a {
+    font-size: 18px;
+    color: rgb(148, 148, 148);
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria a:hover {
+    font-size: 18px;
+    color: rgb(6, 143, 181);
+}
+
+
 /*pading espaciado entre los elemntos*/
 
 .pad_100 {
@@ -728,7 +811,6 @@ small
 }
 
 .contenedor {
-    background-color: white;
     z-index: 1;
 }
 
@@ -910,6 +992,30 @@ section .org img {
         visibility: visible;
     }
     .logo {
-        width: 250px;
+        width: 350px;
+    }
+}
+
+
+/*responsive para area de divulgaciones*/
+
+@media screen and (max-width: 1190px) {
+    .main .trabajos .contenedor-trabajos .trabajo {
+        width: 30%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main .trabajos .contenedor-trabajos .trabajo {
+        width: 46%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main .trabajos .contenedor-trabajos .trabajo {
+        width: 100%;
+        text-align: center;
     }
 }
