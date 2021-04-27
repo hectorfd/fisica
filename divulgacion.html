@@ -43,7 +43,7 @@
             <div class="row">
                 <div class="col-lg-2">
                     <!--logotipo-->
-                    <img class="logo" src="imagenes/logo.png" alt="logo" width="70px">
+                    <img class="logo" src="imagenes/llalliqllan.svg" alt="logo">
                 </div>
                 <div class="col-lg-10">
                     <ul id="ulnav">
@@ -212,23 +212,25 @@
     <script src="js/slippry.min.js"></script>
 
     <script>
-        /*detectar ancho de imagen de diamante*/
-        var dn_width = $('.diamante').width();
-        $('.diamante').css({
-            height: dn_width,
+        $(document).ready(function() {
 
-        });
-        /*clase pra hacer scroll en la barra de navegacion*/
-        var slider = $("#slider").height();
-        $(window).scroll(function() {
-            var scroll = $(window).scrollTop();
-            if (scroll >= $('#nosotros').offset().top - 300) {
-                $('#nav').addClass("nav-overlay");
-            } else {
-                $('#nav').removeClass('nav-overlay');
-            }
-        });
-        $(window).scroll();
+            /*detectar ancho de imagen de diamante*/
+            var dn_width = $('.diamante').width();
+            $('.diamante').css({
+                height: dn_width,
+
+            });
+            /*clase pra hacer scroll en la barra de navegacion*/
+            var slider = $("#slider").height();
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll >= $('#nosotros').offset().top - 300) {
+                    $('#nav').addClass("nav-overlay");
+                } else {
+                    $('#nav').removeClass('nav-overlay');
+                }
+            });
+            $(window).scroll();
         });
     </script>
 

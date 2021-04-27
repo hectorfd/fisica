@@ -151,15 +151,15 @@ nav {
     position: fixed;
     float: none;
     z-index: 9999;
-    transition: all 0.25s ease-in-out;
-    -webkit-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
     padding: 0px 0px;
     animation-name: ejemplo2;
     animation-duration: 0.5s;
     animation-delay: 0s;
-    -moz-transition: all 0.25s ease-in-out;
-    -ms-transition: all 0.25s ease-in-out;
 }
 
 nav:hover {
@@ -173,11 +173,11 @@ nav:hover {
     animation-duration: 0.5s;
     animation-delay: 0s;
     padding: 10px 0px;
-    transition: all 0.25s 1ease-in-out;
-    -webkit-transition: all 0.25s 1ease-in-out;
-    -o-transition: all 0.25s 1ease-in-out;
-    -moz-transition: all 0.25s 1ease-in-out;
-    -ms-transition: all 0.25s 1ease-in-out;
+    transition: all 0.2s 1ease-in-out;
+    -webkit-transition: all 0.2s 1ease-in-out;
+    -o-transition: all 0.2s 1ease-in-out;
+    -moz-transition: all 0.2s 1ease-in-out;
+    -ms-transition: all 0.2s 1ease-in-out;
 }
 
 @keyframes ejemplo {
@@ -821,9 +821,11 @@ small
     background: rgba(20, 20, 20, 0.9);
     padding: 0px 0px;
     color: black;
-    -webkit-transition: all 1.5s ease-in-out;
-    -o-transition: all 1.5s ease-in-out;
-    transition: all 1.5s ease-in-out;
+    transition: all 0.s 5ease-in-out;
+    -webkit-transition: all 0.s 5ease-in-out;
+    -o-transition: all 0.s 5ease-in-out;
+    -moz-transition: all 0.s 5ease-in-out;
+    -ms-transition: all 0.s 5ease-in-out;
 }
 
 
