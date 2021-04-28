@@ -49,7 +49,7 @@
                     <ul id="ulnav">
                         <li class="li whi ">
 
-                            <div class="linea"><a class="rojo" href="index.html"><span class="icon-home3"></span> Inicio</a></div>
+                            <div class="linea"><a href="index.html"><span class="icon-home3"></span> Inicio</a></div>
 
                         </li>
                         <li class="li">
@@ -57,7 +57,7 @@
                             </div>
                         </li>
                         <li class="li">
-                            <div class="linea"><a href="herramientas.html"><span class="icon-lab"></span>
+                            <div class="linea"><a class="rojo" href="herramientas.html"><span class="icon-lab"></span>
                                     Herramientas</a></div>
                         </li>
                         <li class="li">
@@ -102,15 +102,7 @@
     <!--fin frases-->
     <!--footer-->
     <footer>
-        <section class="redes-sociales">
-            <div class="contendor">
-                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
-                <a href="#" class="github"><i class="fab fa-github"></i></a>
-                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-            </div>
-        </section>
+
         <section class="copy">
             <p>©:2021 Todos los derechos reservados por: Sebastían</p>
         </section>
@@ -127,23 +119,25 @@
     <script src="js/slippry.min.js"></script>
 
     <script>
-        /*detectar ancho de imagen de diamante*/
-        var dn_width = $('.diamante').width();
-        $('.diamante').css({
-            height: dn_width,
+        $(document).ready(function() {
 
-        });
-        /*clase pra hacer scroll en la barra de navegacion*/
-        var slider = $("#slider").height();
-        $(window).scroll(function() {
-            var scroll = $(window).scrollTop();
-            if (scroll >= $('#nosotros').offset().top - 300) {
-                $('#nav').addClass("nav-overlay");
-            } else {
-                $('#nav').removeClass('nav-overlay');
-            }
-        });
-        $(window).scroll();
+            /*detectar ancho de imagen de diamante*/
+            var dn_width = $('.diamante').width();
+            $('.diamante').css({
+                height: dn_width,
+
+            });
+            /*clase pra hacer scroll en la barra de navegacion*/
+            var slider = $("#slider").height();
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll >= $('#nosotros').offset().top - 300) {
+                    $('#nav').addClass("nav-overlay");
+                } else {
+                    $('#nav').removeClass('nav-overlay');
+                }
+            });
+            $(window).scroll();
         });
     </script>
 
