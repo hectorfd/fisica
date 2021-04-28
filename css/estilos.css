@@ -652,12 +652,10 @@ small
 }
 
 .cuadro2 {
-    max-width: 600px;
     margin: 0px;
     padding: 10px;
-    background-color: var(--hover);
+    /*background-color: var(--hover);*/
     color: white;
-    background-color: white;
     /*border: white 5px solid;
     border-radius: 20px 20px 20px 20px;
     -webkit-border-radius: 20px 20px 20px 20px;
@@ -668,6 +666,18 @@ small
 
 
 /* ----------- -------- Atomo --------- ---------*/
+
+.bag {
+    background-color: #D93250;
+    background-image: -webkit-gradient(radial, 50%, 0, 50%, 100, color-stop(0%, #D93250), color-stop(100%, #000000));
+    background-image: -webkit-radial-gradient(center, ellipse cover, #D93250 0%, #000000 100%);
+    background-image: -moz-radial-gradient(center, ellipse cover, #D93250 0%, #000000 100%);
+    background-image: -o-radial-gradient(center, ellipse cover, #D93250 0%, #000000 100%);
+    background-image: radial-gradient(center, ellipse cover, #D93250 0%, #000000 100%);
+    position: relative;
+    height: 430px;
+    width: 600px;
+}
 
 [class*="atomo"],
 .center2 {
@@ -690,9 +700,10 @@ atom {
     border-top: 1.5em solid rgba(255, 255, 255, 0.8);
     border-bottom: 1.5em solid rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3), inset 0 0 20px rgba(255, 255, 255, 0.3);
-    height: 30em;
+    height: 22em;
     transition: 1s transform ease-in-out;
-    width: 30em;
+    width: 22em;
+    -webkit-animation: glow 3s linear infinite;
 }
 
 [class*="atomo"] div {
@@ -1186,6 +1197,9 @@ section .org img {
         width: 100%;
         margin: 0px;
         float: left;
+    }
+    .bag {
+        width: 100%;
     }
     .contenidoa {
         position: relative;
